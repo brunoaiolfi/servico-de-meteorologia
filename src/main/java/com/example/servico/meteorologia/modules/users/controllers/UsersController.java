@@ -1,6 +1,6 @@
 package com.example.servico.meteorologia.modules.users.controllers;
 
-import com.example.servico.meteorologia.modules.users.enums.EnumLocale;
+import com.example.servico.meteorologia.modules.users.enums.EnumUserLocale;
 import com.example.servico.meteorologia.modules.users.models.DTO.UserDTO;
 import com.example.servico.meteorologia.modules.users.models.User;
 import com.example.servico.meteorologia.modules.users.services.UserService;
@@ -37,7 +37,7 @@ public class UsersController {
             }
 
             UUID uuid = UUID.randomUUID();
-            EnumLocale locale = EnumLocale.getByName(userDTO.locale());
+            EnumUserLocale locale = EnumUserLocale.getByName(userDTO.locale());
             User user = new User(userDTO.name(), locale, uuid);
 
             return userService.save(user);
@@ -55,7 +55,7 @@ public class UsersController {
                 return ResponseEntity.badRequest().body("Erro: Preencha os campos corretamente!");
             }
 
-            EnumLocale locale = EnumLocale.getByName(userDTO.locale());
+            EnumUserLocale locale = EnumUserLocale.getByName(userDTO.locale());
             User user = new User(userDTO.name(), locale, id);
 
             return userService.update(user);

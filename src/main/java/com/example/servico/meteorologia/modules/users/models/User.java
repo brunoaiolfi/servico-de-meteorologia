@@ -1,12 +1,12 @@
 package com.example.servico.meteorologia.modules.users.models;
 
-import com.example.servico.meteorologia.modules.users.enums.EnumLocale;
+import com.example.servico.meteorologia.modules.users.enums.EnumUserLocale;
 
 import java.util.UUID;
 
 public record User(
         String name,
-        EnumLocale locale,
+        EnumUserLocale locale,
         UUID uuid
 ) {
     public User toEntityUserDTO() {
