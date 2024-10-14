@@ -10,7 +10,16 @@ Os dados meteorológicos são recebidos da api https://open-meteo.com
    - Lista todos os usuários ou um usuário específico, caso o parâmetro `uuid` seja fornecido.
    - Parâmetros:
      - `uuid` (opcional): Identificador único do usuário do tipo uuid.
-
+   - Saída:
+    ```json
+     [
+       {
+         "name": "",
+         "locale": "",
+         "uuid": ""
+       }
+     ]
+     ```
 2. **POST `/user`**
    - Salva um novo usuário.
    - Corpo da Requisição (JSON):
@@ -21,6 +30,14 @@ Os dados meteorológicos são recebidos da api https://open-meteo.com
      }
      ```
    - A localização tem que estar entre estes valores: "Criciúma", "São paulo", "Rio de janeiro", "Salvador"
+   - Saída:
+       ```json
+       {
+         "name": "",
+         "locale": "",
+         "uuid": ""
+       }
+        ```
      
 3. **PUT `/user/{id}`**
    - Atualiza um usuário existente.
@@ -33,12 +50,20 @@ Os dados meteorológicos são recebidos da api https://open-meteo.com
        "locale": "Localização atualizada"
      }
      ```
+  - Saída:
+    ```json
+    {
+      "name": "",
+      "locale": "",
+      "uuid": ""
+    }
+     ```
 
 4. **DELETE `/user/{id}`**
    - Remove um usuário pelo seu identificador único.
    - Parâmetros:
      - `id`: Identificador único do usuário.
-
+   - Saída: "Removido com sucesso!"
 
 ## Meteorologia
 
