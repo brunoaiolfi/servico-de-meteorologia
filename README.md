@@ -20,11 +20,7 @@ Os dados meteorológicos são recebidos da api https://open-meteo.com
        "locale": "Localização"
      }
      ```
-   - Respostas:
-     - 201 Created: Usuário criado com sucesso.
-     - 400 Bad Request: Campos inválidos ou não preenchidos corretamente.
-     - 500 Internal Server Error: Para erros inesperados.
-
+   - A localização tem que estar entre estes valores ["Criciúma", "São paulo
 3. **PUT `/user/{id}`**
    - Atualiza um usuário existente.
    - Parâmetros:
