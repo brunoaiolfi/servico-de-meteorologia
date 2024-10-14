@@ -50,14 +50,14 @@ Os dados meteorológicos são recebidos da api https://open-meteo.com
        "locale": "Localização atualizada"
      }
      ```
-  - Saída:
-    ```json
-    {
-      "name": "",
-      "locale": "",
-      "uuid": ""
-    }
-     ```
+     - Saída:
+       ```json
+       {
+         "name": "",
+         "locale": "",
+         "uuid": ""
+       }
+        ```
 
 4. **DELETE `/user/{id}`**
    - Remove um usuário pelo seu identificador único.
