@@ -20,7 +20,8 @@ Os dados meteorológicos são recebidos da api https://open-meteo.com
        "locale": "Localização"
      }
      ```
-   - A localização tem que estar entre estes valores ["Criciúma", "São paulo
+   - A localização tem que estar entre estes valores: "Criciúma", "São paulo", "Rio de janeiro", "Salvador"
+     
 3. **PUT `/user/{id}`**
    - Atualiza um usuário existente.
    - Parâmetros:
@@ -32,19 +33,32 @@ Os dados meteorológicos são recebidos da api https://open-meteo.com
        "locale": "Localização atualizada"
      }
      ```
-   - Respostas:
-     - 200 OK: Usuário atualizado com sucesso.
-     - 400 Bad Request: Campos inválidos ou não preenchidos corretamente.
-     - 500 Internal Server Error: Para erros inesperados.
 
 4. **DELETE `/user/{id}`**
    - Remove um usuário pelo seu identificador único.
    - Parâmetros:
      - `id`: Identificador único do usuário.
-   - Respostas:
-     - 200 OK: Usuário removido com sucesso.
-     - 400 Bad Request: ID inválido.
-     - 500 Internal Server Error: Para erros inesperados.
 
 
+## Meteorologia
 
+#### Endpoints
+
+1. **GET `/meteorology`**
+   - Retorna uma mensagem de temperatura personalizada para o usuário com base na localização.
+   - Parâmetros:
+     - `userId` (obrigatório): Identificador único do usuário.
+    
+## Sobre
+
+#### Endpoints
+
+1. **GET `/sobre`**
+   - Retorna:
+     ```json
+     {
+       "estudante": "Bruno Sezar M. Aiolfi",
+       "projeto": "Serviço de meteorologia"
+     }
+     ```
+  
