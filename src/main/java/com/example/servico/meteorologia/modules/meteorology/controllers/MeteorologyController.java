@@ -46,11 +46,11 @@ public class MeteorologyController {
             String response;
 
             if (temperature.getBody() < 15) {
-                response = "Olá, " + userSelected.get().name() + "! A temperatura atual esta de " + temperature.getBody().toString() + "°C. Considere levar roupas quentes com você!";
+                response = "Olá, " + userSelected.get().name() + "! Faz " + temperature.getBody().toString() + "°C lá fora. Considere levar roupas quentes com você!";
             } else if (temperature.getBody() >= 15 && temperature.getBody() < 25) {
-                response = "Olá, " + userSelected.get().name() + "! A temperatura atual esta de " + temperature.getBody().toString() + "°C. O tempo está fresco, uma jaqueta leve pode ser útil!";
+                response = "Olá, " + userSelected.get().name() + "! Faz " + temperature.getBody().toString() + "°C lá fora. O tempo está fresco mas uma jaqueta leve pode ser útil!";
             } else {
-                response = "Olá, " + userSelected.get().name() + "! A temperatura atual esta de " + temperature.getBody().toString() + "°C. O tempo está bem quente. Quem sabe uma prainha?";
+                response = "Olá, " + userSelected.get().name() + "! Faz " + temperature.getBody().toString() + "°C lá fora. O tempo está bem quente. Quem sabe uma prainha?";
             }
 
             return ResponseEntity.ok(response);
