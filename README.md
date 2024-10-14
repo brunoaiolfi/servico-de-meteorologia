@@ -73,6 +73,15 @@ Os dados meteorológicos são recebidos da api https://open-meteo.com
    - Retorna uma mensagem de temperatura personalizada para o usuário com base na localização.
    - Parâmetros:
      - `userId` (obrigatório): Identificador único do usuário.
+  - Saídas: <br>
+      Temperatura menor que 15°C: <br>
+          "Olá, Bruno! Faz 14 °C lá fora. Considere levar roupas quentes com você!" <br>
+      Temperatura entre 15 e 25 °C: <br>
+          "Olá, Bruno! Faz 14 °C lá fora. O tempo está fresco mas uma jaqueta leve pode ser útil!" <br>
+      } else {
+          response = "Olá, " + userSelected.get().name() + "! Faz " + temperature.getBody().toString() + "°C lá fora. O tempo está bem quente. Quem sabe uma prainha?";
+      }
+
     
 ## Sobre
 
