@@ -2,6 +2,10 @@
 Este projeto é uma API REST desenvolvida em Spring que fornece funcionalidades para gerenciamento de usuários e consulta de dados meteorológicos. A API permite fazer um CRUD de usuários e também obter mensagens personalizadas de temperatura com base na localização dos usuários.
 Os dados meteorológicos são recebidos da api https://open-meteo.com
 
+## Como rodar o projeto
+   - Na pasta raíz do projeto, rode o comando docker compose up.
+   - Obs: Utilizei o gradle no local do maven pois estou mais acostumado com o mesmo no desenvolvimento android :)
+
 ## Usuários
 
 #### Endpoints
