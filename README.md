@@ -3,7 +3,7 @@ Este projeto é uma API REST desenvolvida em Spring que fornece funcionalidades 
 Os dados meteorológicos são recebidos da api https://open-meteo.com
 
 ## Como rodar o projeto
-   - Na pasta raíz do projeto, rode o comando docker compose up.
+   - Na pasta raíz do projeto, rode o comando ```docker compose up```
    - Obs: Utilizei o gradle no local do maven pois estou mais acostumado com o mesmo no desenvolvimento android :)
 
 ## Usuários
