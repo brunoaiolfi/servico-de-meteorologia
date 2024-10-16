@@ -81,9 +81,9 @@ Os dados meteorológicos são recebidos da api https://open-meteo.com
       Temperatura menor que 15°C: <br>
           "Olá, Bruno! Faz 14 °C lá fora. Considere levar roupas quentes com você!" <br><br>
       Temperatura entre 15 e 25 °C: <br>
-          "Olá, Bruno! Faz 14 °C lá fora. O tempo está fresco mas uma jaqueta leve pode ser útil!" <br><br>
+          "Olá, Bruno! Faz 22 °C lá fora. O tempo está fresco mas uma jaqueta leve pode ser útil!" <br><br>
       Temperatura maior que 25°C: <br>
-          "Olá, Bruno! Faz 14 °C lá fora. O tempo está bem quente. Quem sabe uma prainha?" <br><br>
+          "Olá, Bruno! Faz 31 °C lá fora. O tempo está bem quente. Quem sabe uma prainha?" <br><br>
     
 ## Sobre
 
